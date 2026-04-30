@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a2938;
+  background: #ffffff;
+}
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.site-header {
+  padding: 40px 20px;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand img {
+  width: 130px;
+  display: block;
+}
+.main-nav {
+  display: flex;
+  gap: 100px; /* Espacement large entre les icônes pour occuper la largeur */
+}
+.main-nav .nav-link {
+  text-decoration: none;
+  color: #1a2938;
+  font-weight: 700;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.nav-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff7696;
+}
+.nav-icon i {
+  font-size: 26px;
+}
+.hero-section {
+  position: relative;
+  height: 480px;
+  background: url('img/background.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(17, 46, 62, 0.65);
+}
+.hero-content {
+  position: relative;
+  max-width: 850px;
+  text-align: center;
+}
+.hero-content h1 {
+  margin: 0 0 25px;
+  font-size: 52px;
+  font-weight: 700;
+}
+.hero-content p {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.search-banner {
+  background: #ff8aa6;
+  padding: 24px 0;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+main {
+  padding: 100px 0;
+}
+.section-title {
+  position: relative;
+  margin-bottom: 100px;
+  padding: 30px 0;
+  border-top: 1px dashed #c3c7d0;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 40px;
+  border-left: 1px dashed #c3c7d0;
+}
+.section-title::before { left: 0; }
+.section-title::after { right: 0; }
+
+.section-title h2 {
+  margin: 0;
+  font-size: 26px;
+  text-align: center;
+  color: #1a2938;
+  font-weight: 700;
+}
+.feature-grid, .pricing-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.feature-card, .pricing-card {
+  text-align: center;
+  width: 30%;
+}
+.feature-icon, .pricing-icon {
+  margin-bottom: 25px;
+  color: #ff7696;
+}
+.feature-icon i, .pricing-icon i {
+  font-size: 48px;
+}
+.feature-card h3, .pricing-card h3 {
+  color: #ff7696;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.feature-card p, .pricing-card p {
+  color: #6d7b8c;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.price {
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff7696;
+}
+.site-footer {
+  background: #1d3345;
+  color: white;
+  padding: 90px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.site-footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+}
